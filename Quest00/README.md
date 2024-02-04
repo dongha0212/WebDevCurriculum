@@ -24,7 +24,7 @@ ___
 Q: git은 어떤 형상관리 시스템이고 어떤 특징을 가지고 있을까요? 분산형 형상관리 시스템이란 무엇일까요?
 
 
-A: git 은 분산형 버전관리 시스템으로 Repository 의 완전한 복사본을 로컬에 저장 가능하다. 로컬에서 모든 히스토리를 기록하여 처리속도가 빠르지만 대용량 코드 관리에 부적절하다.
+A: git 은 분산형 버전관리 시스템으로 Repository 의 완전한 복사본을 로컬에 저장 가능하다.<br> 로컬에서 모든 히스토리를 기록하여 처리속도가 빠르지만 대용량 코드 관리에 부적절하다.<br>
 분산형 형상관리 시스템 : 각 개발자가 중앙 서버에 접근하지 않고 코드작업을 할수있다. 각 개발자의 독립적으로 작업한 후 변경사항을 병합/거절 가능.
 ___
 Q: git은 어떻게 개발되게 되었을까요? git이 분산형 시스템을 채택한 이유는 무엇일까요?
@@ -41,31 +41,31 @@ Q: git의 clone/add/commit/push/pull/branch/stash 명령은 무엇이며 어떨 
 
 
 A: clone : 저장소 복제
-   add : 새로운 파일을 추가하거나 존재하는 파일을 스테이징.
-   commit : 스테이징된 파일을 '새로운 버전'으로 기록 commit 시점에 파일의 스냅샷정보가 .git 파일 에 저장함.
-   push : 지역 브랜치를 원격 브랜치에 병합함.
+   add : 새로운 파일을 추가하거나 존재하는 파일을 스테이징.<br>
+   commit : 스테이징된 파일을 '새로운 버전'으로 기록 commit 시점에 파일의 스냅샷정보가 .git 파일 에 저장함.<br>
+   push : 지역 브랜치를 원격 브랜치에 병합함.<br>
    stash : 변경사항을 스테이징이나 커밋하지 않고 따로 보관하여 새로 병합되거나 원격브랜치에 푸시할때 영향이 없도록 한다. stash push로 스태시보관할 파일을 따로 보관하고 stash pop으로 다시 현재 작업파일에 적용함. 
 ___
 Q: git의 Object, Commit, Head, Branch, Tag는 어떤 개념일까요? git 시스템은 프로젝트의 히스토리를 어떻게 저장할까요?
 
 
-A: git 시스템은 프로젝트 히스토리를 4개의 object 로 관리.
-   blob : git add 시 생성, 파일내용이 들어있다.
-   tree : git commit 할때 생성 타입과 객체명 파일명이 기록된다.
-   commit : git commit 할때 생성, tree 객체명, 부모 commit 객체명, author, committer, message가 기록된다.
+A: git 시스템은 프로젝트 히스토리를 4개의 object 로 관리.<br>
+   blob : git add 시 생성, 파일내용이 들어있다.<br>
+   tree : git commit 할때 생성 타입과 객체명 파일명이 기록된다.<br>
+   commit : git commit 할때 생성, tree 객체명, 부모 commit 객체명, author, committer, message가 기록된다.<br>
    tag : git tag 시 생성, commit 객체명, tag이름, tagger, message가 기록된다.
 ___
 Q: 리모트 git 저장소에 원하지 않는 파일이 올라갔을 때 이를 되돌리려면 어떻게 해야 할까요?
 
 
 A:  ```
-    git reset --hard <돌아갈 commit>
-    git push -f
-    reset 사용하여 되돌아갈 commit으로 이동하여 강제로 원격 브랜치에 push
-    git log --oneline // 커밋기록 확인
-    git revert <취소할 커밋> // 커밋을 취소
-    git commit -m "revert message" 
-    push
+    git reset --hard <돌아갈 commit><br>
+    git push -f<br>
+    reset 사용하여 되돌아갈 commit으로 이동하여 강제로 원격 브랜치에 push<br>
+    git log --oneline // 커밋기록 확인<br>
+    git revert <취소할 커밋> // 커밋을 취소<br>
+    git commit -m "revert message" <br>
+    push<br>
     revert 사용하여 commit을 취소
     ```
 ___
