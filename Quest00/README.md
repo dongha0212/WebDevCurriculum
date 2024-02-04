@@ -44,7 +44,8 @@ A: clone : 저장소 복제
    add : 새로운 파일을 추가하거나 존재하는 파일을 스테이징.<br>
    commit : 스테이징된 파일을 '새로운 버전'으로 기록 commit 시점에 파일의 스냅샷정보가 .git 파일 에 저장함.<br>
    push : 지역 브랜치를 원격 브랜치에 병합함.<br>
-   stash : 변경사항을 스테이징이나 커밋하지 않고 따로 보관하여 새로 병합되거나 원격브랜치에 푸시할때 영향이 없도록 한다. stash push로 스태시보관할 파일을 따로 보관하고 stash pop으로 다시 현재 작업파일에 적용함. 
+   stash : 변경사항을 스테이징이나 커밋하지 않고 따로 보관하여 새로 병합되거나 원격브랜치에 푸시할때 영향이 없도록 한다.<br>
+   stash push로 스태시보관할 파일을 따로 보관하고 stash pop으로 다시 현재 작업파일에 적용함. 
 ___
 Q: git의 Object, Commit, Head, Branch, Tag는 어떤 개념일까요? git 시스템은 프로젝트의 히스토리를 어떻게 저장할까요?
 
@@ -58,7 +59,7 @@ ___
 Q: 리모트 git 저장소에 원하지 않는 파일이 올라갔을 때 이를 되돌리려면 어떻게 해야 할까요?
 
 
-A:  ```
+A:<br>
     git reset --hard <돌아갈 commit><br>
     git push -f<br>
     reset 사용하여 되돌아갈 commit으로 이동하여 강제로 원격 브랜치에 push<br>
@@ -67,7 +68,6 @@ A:  ```
     git commit -m "revert message" <br>
     push<br>
     revert 사용하여 commit을 취소
-    ```
 ___
 ## Quest
 * GitHub에 가입한 뒤, [이 커리큘럼의 GitHub 저장소](https://github.com/KnowRe-Dev/WebDevCurriculum)의 우상단의 Fork 버튼을 눌러 자신의 저장소에 복사해 둡니다.
