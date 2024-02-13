@@ -27,7 +27,7 @@
 * [StatCounter](https://gs.statcounter.com/)
 
 ## Checklist
-   * HTML 표준의 역사는 어떻게 될까요?
+ * HTML 표준의 역사는 어떻게 될까요?
   
 A: HTML의 초기 버전들: HTML은 1991년에 Tim Berners-Lee가 개발한 최초의 웹 문서 언어로 시작되었습니다. 초기에는 버전 번호가 없었으며, 각각의 버전은 웹 커뮤니티의 발전에 따라 새로운 기능이나 요구 사항을 반영하여 개발되었습니다.  
 
