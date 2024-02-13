@@ -37,13 +37,14 @@
         }
     </style>
 </head>
+```
 
 외부 스타일 시트: 별도의 CSS 파일을 생성하고 HTML 문서에서 링크하여 스타일을 적용하는 방법입니다.
 
 ```<head>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-
+```
 ___
 
 
