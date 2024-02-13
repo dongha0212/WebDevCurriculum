@@ -21,13 +21,38 @@
 * [그리드 레이아웃과 다른 레이아웃 방법과의 관계](https://developer.mozilla.org/ko/docs/Web/CSS/CSS_Grid_Layout/%EA%B7%B8%EB%A6%AC%EB%93%9C_%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83%EA%B3%BC_%EB%8B%A4%EB%A5%B8_%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83_%EB%B0%A9%EB%B2%95%EA%B3%BC%EC%9D%98_%EA%B4%80%EA%B3%84)
 
 ## Checklist
-* CSS를 HTML에 적용하는 세 가지 방법은 무엇일까요?
-  * 세 가지 방법 각각의 장단점은 무엇일까요?
-* CSS 규칙의 우선순위는 어떻게 결정될까요?
-* CSS의 박스모델은 무엇일까요? 박스가 화면에서 차지하는 크기는 어떻게 결정될까요?
-* `float` 속성은 왜 좋지 않을까요?
-* Flexbox(Flexible box)와 CSS Grid의 차이와 장단점은 무엇일까요?
-* CSS의 비슷한 요소들을 어떤 식으로 정리할 수 있을까요?
+`* CSS를 HTML에 적용하는 세 가지 방법은 무엇일까요?`  
+
+인라인 스타일: HTML 요소의 style 속성을 사용하여 직접 스타일을 정의하는 방법입니다.  
+
+```<div style="color: red; font-size: 16px;">인라인 스타일</div>```  
+
+내부 스타일 시트: HTML 문서 내에 <style> 태그를 사용하여 스타일을 정의하는 방법입니다.  
+
+```<head>
+    <style>
+        div {
+            color: red;
+            font-size: 16px;
+        }
+    </style>
+</head>```
+
+외부 스타일 시트: 별도의 CSS 파일을 생성하고 HTML 문서에서 링크하여 스타일을 적용하는 방법입니다.
+
+```<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>```
+
+___
+
+
+  `* 세 가지 방법 각각의 장단점은 무엇일까요?`
+`* CSS 규칙의 우선순위는 어떻게 결정될까요?`
+`* CSS의 박스모델은 무엇일까요? 박스가 화면에서 차지하는 크기는 어떻게 결정될까요?`
+`* float 속성은 왜 좋지 않을까요?`
+`* Flexbox(Flexible box)와 CSS Grid의 차이와 장단점은 무엇일까요?`
+`* CSS의 비슷한 요소들을 어떤 식으로 정리할 수 있을까요?`
 
 ## Quest
 * Quest 01에서 만들었던 HTML을 바탕으로, [이 그림](screen.png)의 레이아웃과 CSS를 최대한 비슷하게 흉내내 보세요. 꼭 완벽히 정확할 필요는 없으나 align 등의 속성은 일치해야 합니다.
