@@ -20,12 +20,31 @@
 * [require vs import](https://www.geeksforgeeks.org/difference-between-node-js-require-and-es6-import-and-export/)
 
 ## Checklist
-* node.js는 무엇인가요? node.js의 내부는 어떻게 구성되어 있을까요?
-* npm이 무엇인가요? `package.json` 파일은 어떤 필드들로 구성되어 있나요?
-* npx는 어떤 명령인가요? npm 패키지를 `-g` 옵션을 통해 글로벌로 저장하는 것과 그렇지 않은 것은 어떻게 다른가요?
-* 자바스크립트 코드에서 다른 파일의 코드를 부르는 시도들은 지금까지 어떤 것이 있었을까요? CommonJS 대신 ES Modules가 등장한 이유는 무엇일까요?
-* ES Modules는 기존의 `require()`와 동작상에 어떤 차이가 있을까요? CommonJS는 할 수 있으나 ES Modules가 할 수 없는 일에는 어떤 것이 있을까요?
-* node.js에서 ES Modules를 사용하려면 어떻게 해야 할까요? ES Modules 기반의 코드에서 CommonJS 기반의 패키지를 불러오려면 어떻게 해야 할까요? 그 반대는 어떻게 될까요?
+`* node.js는 무엇인가요? node.js의 내부는 어떻게 구성되어 있을까요?`  
+
+Node.js는 Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임 환경입니다.  
+Node.js는 브라우저 환경이 아닌 서버 측 JavaScript 프로그래밍을 가능하게 합니다.   
+주요 특징으로는 비동기 이벤트 기반의 입출력 모델을 사용하여 높은 성능과 확장성을 제공하며,   
+자바스크립트를 사용하여 서버 측 애플리케이션을 개발할 수 있도록 합니다.  
+
+Node.js의 내부 구성은 다음과 같은 요소들로 이루어져 있습니다:  
+
+1. v8 엔진
+2. Libuv 라이브러리
+3. 코어 모듈
+4. 내장 HTTP 서버
+5. 패키지 매니저
+
+___
+
+`* npm이 무엇인가요? package.json 파일은 어떤 필드들로 구성되어 있나요?`  
+
+
+
+`* npx는 어떤 명령인가요? npm 패키지를 `-g` 옵션을 통해 글로벌로 저장하는 것과 그렇지 않은 것은 어떻게 다른가요?`
+`* 자바스크립트 코드에서 다른 파일의 코드를 부르는 시도들은 지금까지 어떤 것이 있었을까요? CommonJS 대신 ES Modules가 등장한 이유는 무엇일까요?`
+`* ES Modules는 기존의 `require()`와 동작상에 어떤 차이가 있을까요? CommonJS는 할 수 있으나 ES Modules가 할 수 없는 일에는 어떤 것이 있을까요?`
+`* node.js에서 ES Modules를 사용하려면 어떻게 해야 할까요? ES Modules 기반의 코드에서 CommonJS 기반의 패키지를 불러오려면 어떻게 해야 할까요? 그 반대는 어떻게 될까요?`
 
 ## Quest
 * 스켈레톤 코드에는 다음과 같은 네 개의 패키지가 있으며, 용도는 다음과 같습니다:
